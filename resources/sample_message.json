@@ -1,0 +1,32 @@
+{
+    "createdAt": "2020-10-27T15:29:09.958Z",
+    "owner": "nick.civili@bytecode.io",
+    "id": "654e3f1b-87bf-4c49-95f4-2ad2117feca3",
+    "createdBy": "nick.civili@bytecode.io",
+    "name": "Nick's Workspace",
+    "workspaceItems": [
+        {
+            "description": "This is a chart workspace item.",
+            "name": "A Chart",
+            "options": {
+                "lookerId": "abc123"
+            },
+            "i": 1
+        },
+        {
+            "description": "This is another chart workspace item.",
+            "name": "Another Chart",
+            "options": {
+                "lookerId": 1
+            },
+            "i": 2
+        },
+        {
+            "description": "This is not a chart workspace item.",
+            "name": "Not A Chart",
+            "options": {
+            },
+            "i": 3
+        }
+    ]
+}
