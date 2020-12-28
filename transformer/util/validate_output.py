@@ -4,7 +4,7 @@ import jsonschema
 from jsonschema import validate
 
 def validate_json(output_json):
-    with open(pathlib.Path(__file__).parent.parent / 'resources/sample_message_schema.json') as f:
+    with open(pathlib.Path(__file__).parent.parent / 'util/resources/sample_message_schema.json') as f:
         schema = json.load(f)
 
     try:
