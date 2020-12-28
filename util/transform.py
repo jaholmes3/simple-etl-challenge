@@ -1,22 +1,16 @@
 from load_sample import load_sample_file
 from validate_output import validate_json
 
+
 def transform():
     input_json = load_sample_file()
-    item1 = input_json['workspaceItems'][0]['name']
-    item2 = input_json['workspaceItems'][0]['options']
-    owner = input_json['owner']
-    id = input_json['id']
     createdAt = input_json['createdAt']
     createdBy = input_json['createdBy']
-
-
-
-
-    ### Write transformation here ###
-
-    ### Assign result of transformation here ###
-    output_json = {id}
+    id = input_json['id']
+    name = input_json['name']
+    owner = input_json['owner']
+    lookerId = input_json['workspaceItems'][0]['options']['lookerId']
+    output_json = {'createdAt': createdAt, 'createdBy': createdBy, 'id': id, 'lookerId': lookerId, 'name': name, 'owner': owner}
     
     if (validate_json(output_json)):
         print("The transformed object conforms to the schema.")
