@@ -12,11 +12,7 @@ pprint({
     'PATH': os.environ['PATH'].split(os.pathsep),
 })
 
-import sys
-import os
-import pkg_resources
-from pprint import pprint
-
+### other version of test
 
 pprint({
     'sys.version_info': sys.version_info,
